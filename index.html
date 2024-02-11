@@ -5,17 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather Dashboard</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="./assets/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Varela+Round&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="header">
             <h1>Weather Dashboard</h1>
         </header>
         <main>
-            <div><!--Search Container--></div>
-            <div><!--Forcast--></div>
-
+            <!--Search Container-->
+            <aside class="col-3 search">
+                <h3 class="">Search for a City</h3>
+                <input class="search-form" style ="margin: 10px; padding-left: 30px; background-color: #ffffff;" type ="text" placeholder="City Name">
+                <button type="button" class ="search-btn">Search</button>
+                <div class="aside-bottom" id="history">History</div>
+            </aside>
+            <!--Forcast--> 
+            <div id="weatherResults" class="weather-forecast" style="display: none;";>
+                <div id="currentDay" class="weatherBox">
+                    <h2 id="city-name" class="city-name "></h2>
+                    <p id="temp" class="temp"></p>
+                    <p id="humidity" class="humidity"></p>
+                    <p id="wind-speed" class="wind-speed"></p>
+                    <p><img id="weather-icon" src="" /></p>
+                </div>
+                <div class="five-day-forecast"></div>
         </main>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./assets/script.js"></script>
     </body>
 </html>
