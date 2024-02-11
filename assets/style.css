@@ -25,3 +25,12 @@ body {
     border-radius: 5px;
     padding: 10px;
 }
+.card {
+    border-radius: 1px;
+    border-style: solid black 3px;
+    padding: 1px; 
+    line-height: 2px;
+}
+.card-body {
+    background-color: rgb(100, 168, 231);
+}
